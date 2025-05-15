@@ -1,0 +1,91 @@
+{
+  "name": "smuggler",
+  "version": "1.0.0",
+  "description": "HTTP Request Smuggling / Desync testing tool",
+  "tools": [
+    {
+      "name": "do-smuggler",
+      "description": "Run Smuggler to detect HTTP Request Smuggling vulnerabilities",
+      "input_schema": {
+        "type": "object",
+        "required": ["url"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "Target URL to detect HTTP Request Smuggling"
+          },
+          "smuggler_args": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Additional smuggler arguments\n        -m, --method METHOD  Specify the HTTP method to use (default: POST)\n        -v, --vhost VHOST    Specify a virtual host to use\n        -l, --len            Enable Content-Length header in all requests\n        -c, --configfile FILE\n                             Specify a configuration file to load payloads from\n        -x                   Exit on the first finding\n        -t, --timeout TIMEOUT\n                             Socket timeout value (default: 5)\n        -verify VERIFY       Verify findings with more requests; never, quick or thorough (default: quick)"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": ["text"]
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "findings": {
+                "type": "object",
+                "properties": {
+                  "cl_te": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "mutation": {
+                          "type": "string"
+                        },
+                        "severity": {
+                          "type": "string",
+                          "enum": ["high", "medium", "low"]
+                        }
+                      }
+                    }
+                  },
+                  "te_cl": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "mutation": {
+                          "type": "string"
+                        },
+                        "severity": {
+                          "type": "string",
+                          "enum": ["high", "medium", "low"]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "raw_output": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+} 
