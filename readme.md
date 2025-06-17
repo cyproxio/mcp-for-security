@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/cyproxio-mcp-for-security-badge.png)](https://mseep.ai/app/cyproxio-mcp-for-security)
+
 # MCP for Security Tools
 
 This repository contains Model Context Protocol (MCP) server implementations for various security testing tools, making them accessible through a standardized interface.
