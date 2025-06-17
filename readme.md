@@ -25,6 +25,7 @@ This repository contains Model Context Protocol (MCP) server implementations for
 | Smuggler | Advanced tool for detecting HTTP Request Smuggling vulnerabilities | [Smuggler MCP Documentation](./smuggler-mcp) |
 | SQLmap | Advanced SQL injection detection and exploitation tool | [SQLmap MCP Documentation](./sqlmap-mcp/) |
 | Waybackurls | Tool for retrieving historical URLs from the Wayback Machine | [Waybackurls MCP Documentation](./waybackurls-mcp/) |
+| WPScan | WordPress vulnerability scanner for detecting plugins, themes, and configuration issues | [WPScan MCP Documentation](./wpscan-mcp/) |
 
 ## Quick Reference
 
@@ -84,6 +85,10 @@ SSL/TLS configuration analyzer for identifying weak ciphers and security misconf
 
 ### Waybackurls MCP  
 Retrieves historical URLs from the Wayback Machine to discover forgotten endpoints.
+
+### WPScan MCP  
+WordPress vulnerability scanner for detecting outdated plugins, themes, and common misconfigurations.
+
 
 ## TO-DO Tools 
 - cero
