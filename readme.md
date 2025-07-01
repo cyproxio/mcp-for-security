@@ -5,9 +5,9 @@
 
 ---
 
-## 🧠 **About Cyprox — The Future of AI-Driven Cybersecurity**
+<img src="https://avatars.githubusercontent.com/u/89649708?s=48&v=4" width="48" align="left" />
 
-![Cyprox Logo](https://avatars.githubusercontent.com/u/89649708?s=48&v=4)
+**About Cyprox — The Future of AI-Driven Cybersecurity**
 
 **Cyprox** is pioneering the future of cybersecurity by combining artificial intelligence and machine learning to empower organizations with next-level threat detection and automated response.  
 
