@@ -1,6 +1,44 @@
-# MCP for Security Tools
+# MCP for Security
 
-This repository contains Model Context Protocol (MCP) server implementations for various security testing tools, making them accessible through a standardized interface.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/cyproxio/mcp-for-security?style=social)](https://github.com/cyproxio/mcp-for-security/stargazers)
+
+---
+
+## 🧠 **About Cyprox — The Future of AI-Driven Cybersecurity**
+
+![Cyprox Logo](https://avatars.githubusercontent.com/u/89649708?s=48&v=4)
+
+**Cyprox** is pioneering the future of cybersecurity by combining artificial intelligence and machine learning to empower organizations with next-level threat detection and automated response.  
+
+> *"Democratizing security through AI-powered automation and community-driven innovation."*
+
+### Why Cyprox?
+
+- 🚀 **Innovative AI Solutions:** Advanced models tailored for real-time cybersecurity.
+- 🌐 **Community-Driven:** Open-source projects fostering collaboration and rapid evolution.
+- ⚡ **Speed & Precision:** Automated threat detection that reduces human latency.
+- 🔒 **Secure & Transparent:** Trustworthy platform built with open standards.
+
+Explore more at [https://cyprox.io](https://cyprox.io)
+
+---
+
+## 🚀 Project Overview
+
+**MCP for Security** is a core project within the Cyprox ecosystem — an AI-powered **Model-Context-Protocol (MCP)** server infrastructure designed for cutting-edge security applications. It provides a flexible and high-performance foundation for automated cybersecurity workflows.
+
+---
+
+## 🔥 Why MCP for Security?
+
+- **AI-Driven Security:** Harness AI for smart threat analysis and incident management.
+- **Flexible & Modular:** Easily integrate diverse protocols and AI models.
+- **Real-Time Performance:** Fast, actionable security insights.
+- **Open Source:** Transparent, collaborative, and constantly improving.
+
+---
+
 
 ## Available Tools
 
@@ -136,4 +174,3 @@ For installation instructions for each tool, please refer to the individual docu
 
 Each tool has specific parameters and usage instructions. For detailed information, see the documentation for the specific tool you want to use.
 
-## License
