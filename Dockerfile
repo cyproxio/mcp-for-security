@@ -1,12 +1,9 @@
-FROM node:18-bullseye
+FROM golang:1.24-bullseye AS golang
 
 # Set working directory
 WORKDIR /app
 
 
-# Enable Go modules
-ENV GO111MODULE=on
-ENV GOPROXY=https://proxy.golang.org,direct
 
 # Install Python, pip, Go, virtualenv, and other tools
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -24,14 +21,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ln -s /opt/sqlmap/sqlmap.py /usr/local/bin/sqlmap && \
     chmod +x /usr/local/bin/sqlmap
 
-    
-# Install latest Go manually
-ENV GOLANG_VERSION=1.24.4
-RUN curl -LO https://go.dev/dl/go${GOLANG_VERSION}.linux-arm64.tar.gz && \
-    rm -rf /usr/local/go && \
-    tar -C /usr/local -xzf go${GOLANG_VERSION}.linux-arm64.tar.gz && \
-    rm go${GOLANG_VERSION}.linux-arm64.tar.gz
-ENV PATH="/usr/local/go/bin:$PATH"
+
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && \
+    apt-get install -y nodejs && \
+    npm install -g npm@latest
 
 # Create a global virtualenv
 RUN python3 -m venv /opt/venv
