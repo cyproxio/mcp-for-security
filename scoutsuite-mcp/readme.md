@@ -50,7 +50,7 @@ Scout Suite MCP enables automated security auditing of cloud environments (AWS, 
 
 3. Build the project:
    ```
-   npm run build
+   npm install && npm run build
    ```
 
 ## Usage
@@ -65,7 +65,7 @@ Configure the Scout Suite MCP server in your MCP client configuration:
     "command": "node",
     "args": [
       "/path/to/Scout Suite-mcp/build/index.js",
-      "do-Scout Suite"
+      "/path/to/scoutsuite binary"
     ]
   }
 }

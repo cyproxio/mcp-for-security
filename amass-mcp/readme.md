@@ -39,7 +39,7 @@ Amass MCP enables seamless integration of Amass's advanced reconnaissance capabi
 
 3. Build the project:
  ```
- npm run build
+ npm install && npm run build
  ```
 
 ## Usage

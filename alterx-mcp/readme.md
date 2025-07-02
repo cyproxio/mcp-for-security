@@ -36,7 +36,7 @@ Alterx MCP enables seamless integration of Alterx's domain wordlist generation c
 
 3. Build the project:
  ```
- npm run build
+ npm install && npm run build
  ```
 
 ## Usage

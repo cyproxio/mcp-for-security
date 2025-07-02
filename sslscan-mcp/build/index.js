@@ -14,8 +14,8 @@ const server = new mcp_js_1.McpServer({
     name: "sslscan",
     version: "1.0.0",
 });
-server.tool("do-sslscan", "Execute sslscan", {
-    target: zod_1.z.string().url().describe("Target to run sslscan"),
+server.tool("do-sslscan", "Execute SSLScan, a comprehensive SSL/TLS scanner that identifies supported cipher suites, SSL/TLS versions, certificate information, and security vulnerabilities in SSL/TLS configurations of web servers and other services. It helps security professionals assess the security posture of SSL/TLS implementations.", {
+    target: zod_1.z.string().url().describe("Target URL to scan (must begin with https:// for proper SSL/TLS scanning)"),
     sslscan_args: zod_1.z.array(zod_1.z.string()).describe(`--sni-name=<name>    Hostname for SNI
   --ipv4, -4           Only use IPv4
   --ipv6, -6           Only use IPv6

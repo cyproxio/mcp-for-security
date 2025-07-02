@@ -30,7 +30,7 @@ WPScan MCP enables seamless integration of WPScan’s advanced WordPress vulnera
 
 3. Build the project:
    ```
-   npm run build
+   npm install && npm run build
    ```
 
 

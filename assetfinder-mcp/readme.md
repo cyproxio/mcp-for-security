@@ -38,7 +38,7 @@ Assetfinder MCP enables seamless integration of Assetfinder’s passive subdomai
 
 3. Build the project:
    ```
-   npm run build
+   npm install && npm run build
    ```
 
 ## Usage

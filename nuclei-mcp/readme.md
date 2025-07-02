@@ -36,7 +36,7 @@ Nuclei MCP enables seamless integration of Nuclei's template-based vulnerability
 
 3. Build the project:
  ```
- npm run build
+ npm install && npm run build
  ```
 
 ## Usage

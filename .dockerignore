@@ -1,0 +1,25 @@
+# Git metadata
+.git
+.gitignore
+
+**/node_modules
+
+**/build
+
+# Log dosyaları
+*.log
+npm-debug.log
+
+tmp
+*.tmp
+.vscode
+.idea
+
+.env
+.env.local
+.env.*.local
+
+Dockerfile
+README.md
+*.md
+tests

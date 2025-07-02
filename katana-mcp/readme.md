@@ -42,7 +42,7 @@ Katana MCP enables seamless integration of Katana’s advanced crawling and endp
 
 3. Build the project:
    ```
-   npm run build
+   npm install && npm run build
    ```
 
 ## Usage

@@ -36,7 +36,7 @@ Masscan MCP enables seamless integration of Masscan's high-speed network scannin
 
 3. Build the project:
  ```
- npm run build
+ npm install && npm run build
  ```
 
 ## Usage

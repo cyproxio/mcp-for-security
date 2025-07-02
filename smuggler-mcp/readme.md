@@ -29,7 +29,7 @@ Smuggler MCP allows you to use the Smuggler HTTP Request Smuggling testing tool 
 
 3. Build the project:
    ```
-   npm run build
+   npm install && npm run build
    ```
 
 

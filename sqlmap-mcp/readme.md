@@ -36,7 +36,7 @@ SQLMap MCP enables seamless integration of SQLMap's powerful SQL injection testi
 
 3. Build the project:
    ```
-   npm run build
+   npm install && npm run build
    ```
 
 ## Usage

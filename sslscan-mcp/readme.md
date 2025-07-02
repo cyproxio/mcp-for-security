@@ -37,7 +37,7 @@ SSLScan MCP enables seamless integration of SSLScan's SSL/TLS assessment capabil
 
 3. Build the project:
  ```
- npm run build
+ npm install && npm run build
  ```
 
 ## Usage

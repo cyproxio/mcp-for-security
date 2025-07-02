@@ -15,7 +15,7 @@ const server = new mcp_js_1.McpServer({
     version: "1.0.0",
 });
 server.tool("do-arjun", "Run Arjun to discover hidden HTTP parameters", {
-    url: zod_1.z.string().url().optional().describe("Target URL to scan for hidden parameters"),
+    url: zod_1.z.string().url().describe("Target URL to scan for hidden parameters"),
     textFile: zod_1.z.string().optional().describe("Path to file containing multiple URLs"),
     wordlist: zod_1.z.string().optional().describe("Path to custom wordlist file"),
     method: zod_1.z.enum(["GET", "POST", "JSON", "HEADERS"]).optional().describe("HTTP method to use for scanning (default: GET)"),
@@ -45,7 +45,6 @@ server.tool("do-arjun", "Run Arjun to discover hidden HTTP parameters", {
     if (chunkSize) {
         arjunArgs.push('--rate-limit', chunkSize.toString());
     }
-    arjunArgs.push("-q");
     const arjun = (0, child_process_1.spawn)(args[0], arjunArgs);
     let output = '';
     // Handle stdout

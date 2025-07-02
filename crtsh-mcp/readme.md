@@ -36,7 +36,7 @@ Certificate Search MCP enables seamless integration of crt.sh's capability to di
 
 3. Build the project:
  ```
- npm run build
+ npm install && npm run build
  ```
 
 ## Usage
@@ -51,7 +51,6 @@ Configure the Certificate Search MCP server in your MCP client configuration:
     "command": "node",
     "args": [
       "/path/to/crtsh-mcp/build/index.js",
-      "crtsh"
     ]
   }
 }

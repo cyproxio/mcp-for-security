@@ -11,14 +11,14 @@ if (args.length === 0) {
 }
 // Create server instance
 const server = new mcp_js_1.McpServer({
-    name: "sslscan",
+    name: "waybackurls",
     version: "1.0.0",
 });
-server.tool("do-waybackurls", "Execute waybackurls", {
-    target: zod_1.z.string().url().describe("Target URL to scan (must begin with https:// for proper SSL/TLS scanning)"),
-    noSub: zod_1.z.string().nullable().describe("Don't include subdomains of the target domain"),
+server.tool("do-waybackurls", "Execute Waybackurls, a tool that fetches known URLs from the Wayback Machine archive for a given domain. This helps in discovering historical endpoints, forgotten API paths, and potentially vulnerable URLs that might not be directly accessible or linked from the current version of the website.", {
+    target: zod_1.z.string().url().describe("Target domain to retrieve historical URLs from the Wayback Machine (e.g., example.com)"),
+    noSub: zod_1.z.boolean().nullable().describe("When set to true, only retrieves URLs from the exact domain specified, excluding all subdomains"),
 }, async ({ target, noSub }) => {
-    const waybackurls = (0, child_process_1.spawn)(args[0], [...(noSub ? ['--no-subs'] : []), target]);
+    const waybackurls = (0, child_process_1.spawn)(args[0], [target, ...(noSub ? ['--no-subs'] : [])]);
     let output = '';
     // Handle stdout
     waybackurls.stdout.on('data', (data) => {

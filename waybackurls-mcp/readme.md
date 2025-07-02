@@ -37,7 +37,7 @@ Waybackurls MCP enables seamless integration of Waybackurls' capability to disco
 
 3. Build the project:
  ```
- npm run build
+ npm install && npm run build
  ```
 
 ## Usage

@@ -41,7 +41,7 @@ httpx MCP enables seamless integration of httpx's capabilities to scan and analy
 
 3. Build the project:
  ```
- npm run build
+ npm install && npm run build
  ```
 
 ## Usage
