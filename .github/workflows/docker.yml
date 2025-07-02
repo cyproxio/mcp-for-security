@@ -13,23 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: cyprox
-          password: ${{ secrets.CYPROX_DOCKER_HUB_PASSWORD }}
-
-      - name: Build and push Docker image (v1)
+      - name: Docker Push
         uses: docker/build-push-action@v1
         with:
           username: cyprox
-          password: ${{ secrets.CYPROX_DOCKER_HUB_PASSWORD }}
+          password: ${{secrets.CYPROX_DOCKER_HUB_PASSWORD}}
           repository: cyprox/mcp-server
           tags: ${{ github.event.inputs.tag }}
-          push: true
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
