@@ -21,7 +21,7 @@ jobs:
         with:
           username: cyprox
           password: ${{secrets.CYPROX_DOCKER_HUB_PASSWORD}}
-          repository: cyprox/mcp-server
+          repository: cyprox/mcp-for-security
           tags: ${{ github.event.inputs.tag }}
 
       - name: Create GitHub Release
@@ -31,6 +31,6 @@ jobs:
           name: MCP Docker Image - ${{ github.event.inputs.tag }}
           body: |
             Docker image published to Docker Hub:
-            `docker pull cyprox/mcp-server:${{ github.event.inputs.tag }}`
+            `docker pull cyprox/mcp-for-security:${{ github.event.inputs.tag }}`
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
