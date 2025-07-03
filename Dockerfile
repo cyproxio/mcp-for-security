@@ -22,8 +22,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     chmod +x /usr/local/bin/sqlmap
 
 
-RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && \
-    apt-get install -y nodejs npm && \
+    RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash - && \
+    apt-get install -y nodejs && \
+    if ! command -v npm >/dev/null 2>&1; then \
+        echo "[*] npm not found, installing manually..."; \
+        apt-get install -y npm; \
+    else \
+        echo "[+] npm is already included with Node.js"; \
+    fi && \
     npm install -g npm@latest
 
 # Create a global virtualenv
