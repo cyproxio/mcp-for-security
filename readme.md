@@ -39,7 +39,7 @@ You can use all MCP servers through Docker using the cyprox/mcp-for-security Doc
 Visit [Cyprox](https://cyprox.io) for more information.
 
 ### Manuel
-Since each MCP server may require different dependencies, the `start.s` bash script provides a general setup mechanism. Nonetheless, users should always refer to the installation instructions specific to the corresponding MCP server to ensure proper setup.
+Since each MCP server may require different dependencies, the `start.sh` bash script provides a general setup mechanism. Nonetheless, users should always refer to the installation instructions specific to the corresponding MCP server to ensure proper setup.
 
 ---
 
