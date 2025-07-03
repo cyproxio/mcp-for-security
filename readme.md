@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/cyproxio/mcp-for-security?style=social)](https://github.com/cyproxio/mcp-for-security/stargazers)
-
+[![Docker](https://img.shields.io/github/release/cyproxio/mcp-for-security?style=social)](https://github.com/cyproxio/mcp-for-security/releases)
 ---
 
 <img src="https://avatars.githubusercontent.com/u/89649708?s=48&v=4" width="40" align="left" />
@@ -10,13 +10,13 @@
 **About Cyprox — The Future of AI-Driven Cybersecurity** <br/></br>
 
 
-**Cyprox** is pioneering the future of cybersecurity by combining artificial intelligence and machine learning to empower organizations with next-level threat detection and automated response.  
+**Cyprox** is pioneering the future of cybersecurity by combining artificial intelligence and security tools to empower organizations with next-level threat detection and automated response.  
 
 > *"The Future of Cybersecurity Humans and AI, Working Together..."*
 
-### Why Cyprox?
+### Cyprox
 
-- 🚀 **Innovative AI Solutions:** Advanced models tailored for real-time cybersecurity.
+- 🚀 **AI Driven Solutions:** Cybersecurity solutions using Agentic-AI systems with an AI-driven approach
 - 🌐 **Community-Driven:** Open-source projects fostering collaboration and rapid evolution.
 - ⚡ **Speed & Precision:** Automated threat detection that reduces human latency.
 - 🔒 **Secure & Transparent:** Trustworthy platform built with open standards.
@@ -27,16 +27,21 @@ Explore more at [https://cyprox.io](https://cyprox.io)
 
 ## 🚀 Project Overview
 
-**MCP for Security** is a core project within the Cyprox ecosystem — an AI-powered **Model-Context-Protocol (MCP)** server infrastructure designed for cutting-edge security applications. It provides a flexible and high-performance foundation for automated cybersecurity workflows.
+**MCP for Security** repository contains Model Context Protocol (MCP) server implementations for various security testing tools, making them accessible through a standardized interface.
 
 ---
 
-## 🔥 Why MCP for Security?
+---
 
-- **AI-Driven Security:** Harness AI for smart threat analysis and incident management.
-- **Flexible & Modular:** Easily integrate diverse protocols and AI models.
-- **Real-Time Performance:** Fast, actionable security insights.
-- **Open Source:** Transparent, collaborative, and constantly improving.
+## 🌐 Installation 
+
+### Docker
+
+You can use all MCP servers through Docker using the cyprox/mcp-for-security Docker image. It can also be used from any MCP client with Docker support, such as the Cyprox platform.
+Visit [Cyprox](https://cyprox.io) for more information.
+
+### Manuel
+Since each MCP server may require different dependencies, the `start.s` bash script provides a general setup mechanism. Nonetheless, users should always refer to the installation instructions specific to the corresponding MCP server to ensure proper setup.
 
 ---
 
