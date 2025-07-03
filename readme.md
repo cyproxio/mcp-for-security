@@ -31,8 +31,6 @@ Explore more at [https://cyprox.io](https://cyprox.io)
 
 ---
 
----
-
 ## 🌐 Installation 
 
 ### Docker
