@@ -1,0 +1,9 @@
+{
+  "cero": {
+    "command": "node",
+    "args": [
+      "/Users/serhatcicek/Documents/coding/mcp-for-security/cero/build/index.js",
+      "/Users/serhatcicek/go/bin/cero"
+    ]
+  }
+}
