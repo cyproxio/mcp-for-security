@@ -52,6 +52,7 @@ Since each MCP server may require different dependencies, the `start.sh` bash sc
 | Alterx | Pattern-based wordlist generator for subdomain discovery | [Alterx MCP Documentation](./alterx-mcp/) |
 | Arjun | Run Arjun to discover hidden HTTP parameters | [Arjun MCP Documentation](./arjun-mcp) |
 | Assetfinder | Passive subdomain discovery tool based on Tomnomnom’s Assetfinder | [Assetfinder MCP Documentation](./assetfinder-mcp) |
+| Cero | Certificate-based subdomain enumeration tool leveraging TLS handshakes to extract domain names from certificate fields like SAN | [Cero MCP Documentation](./cero-mcp) |
 | Certificate Search (crt.sh) | Subdomain discovery tool using SSL certificate logs | [Certificate Search MCP Documentation](./crtsh-mcp/) |
 | FFUF | Web content fuzzing tool for discovering hidden files and directories | [FFUF MCP Documentation](./ffuf-mcp/) |
 | HTTP Headers Security | Analyzer for HTTP security headers against OWASP standards | [HTTP Headers MCP Documentation](./http-headers-security-mcp/) |
@@ -82,6 +83,9 @@ Discovers hidden HTTP parameters on web applications by scanning URLs, supportin
 
 ### Assetfinder MCP
 Discovers subdomains related to a given domain using passive enumeration techniques. Integrates Tomnomnom’s Assetfinder into the MCP ecosystem for fast and reliable reconnaissance.
+
+### Cero MCP Server
+Certificate-based subdomain discovery tool that extracts domain names from TLS certificates for reconnaissance and infrastructure mapping.
 
 ### Certificate Search (crt.sh) MCP  
 Discovers subdomains by querying SSL certificate transparency logs without active scanning.
