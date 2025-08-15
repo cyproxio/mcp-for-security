@@ -1,9 +1,25 @@
 {
-  "cero": {
-    "command": "node",
-    "args": [
-      "/Users/serhatcicek/Documents/coding/mcp-for-security/cero/build/index.js",
-      "/Users/serhatcicek/go/bin/cero"
-    ]
+  "mcpServers": {
+    "cero": {
+      "command": "node",
+      "args": [
+        "C:/Users/example/Documents/coding/mcp-for-security/cero/build/index.js",
+        "C:/Users/example/go/bin/cero.exe"
+      ]
+    },
+    "ffuf": {
+      "command": "node",
+      "args": [
+        "C:/Users/example/OneDrive/Masaüstü/mcp-for-security/ffuf-mcp/build/index.js",
+        "C:/Users/example/go/bin/ffuf.exe"
+      ]
+    },
+    "gowitness": {
+      "command": "node",
+      "args": [
+        "C:/Users/example/OneDrive/Masaüstü/mcp-for-security/.Gowitness/build/index.js",
+        "C:/Users/example/go/bin/gowitness.exe"
+      ]
+    }
   }
 }
