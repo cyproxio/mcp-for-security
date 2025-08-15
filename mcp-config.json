@@ -2,8 +2,15 @@
   "cero": {
     "command": "node",
     "args": [
-      "/Users/serhatcicek/Documents/coding/mcp-for-security/cero/build/index.js",
-      "/Users/serhatcicek/go/bin/cero"
+      "/Users/test/Documents/coding/mcp-for-security/cero/build/index.js",
+      "/Users/test/go/bin/cero"
+    ]
+  },
+  "gowitness-mcp": {
+    "command": "node",
+    "args": [
+      "/Users/test/Documents/coding/mcp-for-security/gowitness-mcp/build/index.js",
+      "/Users/test/go/bin/gowitness"
     ]
   }
 }
