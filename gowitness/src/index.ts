@@ -107,10 +107,35 @@ server.tool(
                         // gowitness creates files in the screenshot path directory
                         const screenshotDir = screenshot_path || "./screenshots";
                         const files = await readdir(screenshotDir);
-                        const screenshotFile = files.find(file => 
+                        
+                        // First try to find exact match with hostname
+                        let screenshotFile = files.find(file => 
                             (file.endsWith('.jpeg') || file.endsWith('.png') || file.endsWith('.jpg')) && 
                             file.includes(getHostnameFromUrl(url))
                         );
+                        
+                        // If not found, try partial domain matching
+                        if (!screenshotFile) {
+                            const hostname = getHostnameFromUrl(url);
+                            const domainParts = hostname.split('_').filter(part => part.length > 0);
+                            
+                            screenshotFile = files.find(file => 
+                                (file.endsWith('.jpeg') || file.endsWith('.png') || file.endsWith('.jpg')) && 
+                                domainParts.some(part => file.includes(part))
+                            );
+                        }
+                        
+                        // If still not found, take the most recently created screenshot
+                        if (!screenshotFile) {
+                            const imageFiles = files.filter(file => 
+                                file.endsWith('.jpeg') || file.endsWith('.png') || file.endsWith('.jpg')
+                            );
+                            
+                            if (imageFiles.length > 0) {
+                                // Sort by creation time and take the most recent one
+                                screenshotFile = imageFiles[imageFiles.length - 1];
+                            }
+                        }
                         
                         if (!screenshotFile) {
                             reject(new Error("Screenshot file not found after gowitness execution"));
@@ -125,16 +150,10 @@ server.tool(
                         resolve({
                             content: [{
                                 type: "text",
-                                text: `Screenshot captured successfully. Binary data size: ${binaryData.length} bytes`
+                                text: `Screenshot captured successfully. Binary data size: ${binaryData.length} bytes. Binary data: ${binaryData.toString('base64')} `, 
+                                
                             }],
                             // Include binary data as base64 encoded string for transport
-                            binaryData: binaryData.toString('base64'),
-                            metadata: {
-                                filename: screenshotFile,
-                                size: binaryData.length,
-                                format: format || "jpeg",
-                                url: url
-                            }
                         });
                     } catch (error) {
                         reject(new Error(`Failed to read screenshot file: ${error instanceof Error ? error.message : String(error)}`));
