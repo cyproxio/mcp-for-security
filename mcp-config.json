@@ -1,9 +1,122 @@
 {
-  "cero": {
-    "command": "node",
-    "args": [
-      "/Users/serhatcicek/Documents/coding/mcp-for-security/cero/build/index.js",
-      "/Users/serhatcicek/go/bin/cero"
-    ]
+  "mcpServers": {
+    "cero": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/cero/build/index.js",
+        "/Users/serhatcicek/go/bin/cero"
+      ],
+      "dockerContainer": ""
+    },
+    "alterx-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/alterx-mcp/build/index.js",
+        "/Users/serhatcicek/go/bin/alterx"
+      ],
+      "dockerContainer": ""
+    },
+    "amass-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/amass-mcp/build/index.js",
+        "/opt/homebrew/bin/amass"
+      ],
+      "dockerContainer": ""
+    },
+    "assetfinder-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/assetfinder-mcp/build/index.js",
+        "/Users/serhatcicek/go/bin/assetfinder"
+      ],
+      "dockerContainer": ""
+    },
+    "crtsh-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/crtsh-mcp/build/index.js"
+      ],
+      "dockerContainer": ""
+    },
+    "ffuf-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/ffuf-mcp/build/index.js",
+        "/opt/homebrew/bin/ffuf"
+      ],
+      "dockerContainer": ""
+    },
+    "http-headers-security-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/http-headers-security-mcp/build/index.js"
+      ],
+      "dockerContainer": ""
+    },
+    "httpx-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/httpx-mcp/build/index.js",
+        "/Users/serhatcicek/go/bin/httpx"
+      ],
+      "dockerContainer": ""
+    },
+    "katana-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/katana-mcp/build/index.js",
+        "/Users/serhatcicek/go/bin/katana"
+      ],
+      "dockerContainer": ""
+    },
+    "masscan-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/masscan-mcp/build/index.js",
+        "/opt/homebrew/bin/masscan"
+      ],
+      "dockerContainer": ""
+    },
+    "nmap-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/nmap-mcp/build/index.js",
+        "/opt/homebrew/bin/nmap"
+      ],
+      "dockerContainer": ""
+    },
+    "nuclei-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/nuclei-mcp/build/index.js",
+        "/usr/local/go/bin/nuclei"
+      ],
+      "dockerContainer": ""
+    },
+    "sqlmap-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/sqlmap-mcp/build/index.js",
+        "sqlmap"
+      ],
+      "dockerContainer": ""
+    },
+    "waybackurls-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/waybackurls-mcp/build/index.js",
+        "waybackurls"
+      ],
+      "dockerContainer": ""
+    },
+    "wpscan-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/serhatcicek/Documents/coding/mcp-for-security/wpscan-mcp/build/index.js",
+        "wpscan"
+      ],
+      "dockerContainer": ""
+    }
   }
 }

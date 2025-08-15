@@ -137,7 +137,6 @@ WordPress vulnerability scanner for detecting outdated plugins, themes, and comm
 
 
 ## TO-DO Tools 
-- cero
 - commix
 - Corsy
 - CrackMapExec
