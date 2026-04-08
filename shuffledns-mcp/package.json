@@ -14,7 +14,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.11.0",
+    "@modelcontextprotocol/sdk": "^1.26.0",
     "node-pty": "^1.0.0",
     "zod": "^3.24.4"
   }
