@@ -8,7 +8,7 @@
     "start": "node build/index.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.11.2",
+    "@modelcontextprotocol/sdk": "^1.26.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
